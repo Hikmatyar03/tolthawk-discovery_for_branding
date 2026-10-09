@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ToltHawk Brand Discovery | KreaitX</title><link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>*{box-sizing:border-box}
+:root{--bg:#fff;--fg:#0b0d12;--mut:#5a6072;--ln:#e6e8ef;--ac:#4364ef;--acd:#2f4ed0;--tint:#f3f5fe;--r:10px;--f:"Geist",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}html,body{height:100%;margin:0}body{height:100vh;height:100dvh}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 var(--f);display:flex;flex-direction:column}
+.top{display:flex;align-items:center;gap:20px;padding:14px 24px;border-bottom:1px solid var(--ln)}.lg{height:22px;flex:none}
+#hd{display:flex;gap:4px;flex:1}#hd button{font:inherit;font-size:14px;color:var(--mut);background:none;border:0;padding:6px 10px;border-radius:8px;cursor:pointer}#hd button.on{color:var(--fg);font-weight:600}
+.hb{display:flex;gap:8px;margin-left:auto}
+.btn{font:inherit;font-weight:500;font-size:15px;border-radius:var(--r);padding:11px 20px;border:1px solid #cfd4e2;background:#fff;color:var(--fg);cursor:pointer;display:inline-block;text-decoration:none;line-height:1.2}.btn:hover{border-color:var(--ac)}
+.btn.p{background:var(--ac);border-color:var(--ac);color:#fff}.btn.p:hover{background:var(--acd)}.btn.s{padding:8px 14px;font-size:14px;min-height:40px}.btn{min-height:44px}.lnk{min-height:44px}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.bar{height:3px;background:var(--ln)}.bar i{display:block;height:100%;background:var(--ac);width:0;transition:width .3s}
+main{flex:1;overflow-y:auto;padding:48px 24px 32px}.w{max-width:640px;margin:0 auto}.w.wide{max-width:1080px}
+.meta{color:var(--mut);font-size:14px;margin:0 0 14px}
+h1{font-size:clamp(36px,6vw,56px);line-height:1.05;letter-spacing:-.03em;font-weight:600;margin:0 0 16px;text-wrap:balance}
+h2{font-size:clamp(26px,3.6vw,36px);line-height:1.15;letter-spacing:-.02em;font-weight:600;margin:0 0 12px;text-wrap:balance}
+.lead{color:var(--mut);font-size:18px;max-width:60ch;margin:0 0 28px}.ex{color:var(--mut);font-size:15px;margin:0 0 24px;max-width:62ch}
+label{display:block;font-size:14px;font-weight:500;margin:18px 0 6px}
+textarea,input[type=text]{width:100%;font:inherit;color:var(--fg);background:#fff;border:1px solid #cfd4e2;border-radius:var(--r);padding:12px 14px}
+textarea{min-height:112px;resize:vertical}textarea:focus,input:focus{outline:2px solid var(--ac);outline-offset:0;border-color:var(--ac)}::placeholder{color:#737a8e}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.opt{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:15px;color:var(--fg);background:#fff;border:1px solid #cfd4e2;border-radius:var(--r);padding:10px 16px;cursor:pointer}.opt:hover{border-color:var(--ac)}.opt.on{background:var(--tint);border-color:var(--ac);font-weight:500}
+.opt b{display:none;min-width:20px;height:20px;border-radius:50%;background:var(--ac);color:#fff;font-size:12px;align-items:center;justify-content:center}.opt.on b{display:inline-flex}
+.hint{font-size:13px;color:var(--mut);margin:10px 0 0}
+.act{border-top:1px solid var(--ln);padding:12px 24px;background:#fff}.act .in{max-width:640px;margin:0 auto;display:flex;gap:10px;align-items:center}.act.wide .in{max-width:1080px}.sp{flex:1}
+.lnk{background:none;border:0;font:inherit;font-size:14px;color:var(--mut);text-decoration:underline;cursor:pointer;padding:8px}
+.aud{display:grid;grid-template-columns:1.5fr 1fr;gap:32px;align-items:start}@media(max-width:860px){.aud{grid-template-columns:1fr}}
+.fig{position:relative}.fig img{cursor:zoom-in}.fig img{width:100%;display:block;border-radius:var(--r);border:1px solid var(--ln)}
+.dot{position:absolute;transform:translate(-50%,-50%);width:26px;height:26px;border-radius:50%;background:var(--ac);color:#fff;font:600 13px var(--f);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px rgba(67,100,239,.25)}
+.fd{display:flex;gap:12px;margin:0 0 20px}.fd .dot{position:static;transform:none;flex:none;width:24px;height:24px;margin-top:1px;box-shadow:none}.fd b{display:block;font-weight:600}.fd p{margin:2px 0 0;color:var(--mut);font-size:15px}
+.tg{font-size:12px;font-weight:500;color:var(--mut);border:1px solid var(--ln);border-radius:6px;padding:1px 7px;margin-left:8px}.tg.Positive{color:var(--ac);border-color:var(--ac)}
+.rows{border-top:1px solid var(--ln);margin:0 0 8px}.row{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--ln)}
+.row .n{color:var(--ac);font:500 14px "Geist Mono",ui-monospace,monospace;padding-top:3px}.row b{display:block;font-weight:600;font-size:17px}.row p{margin:2px 0 0;color:var(--mut)}
+.row.ph{grid-template-columns:44px 1fr 110px}.row .d{color:var(--mut);font-size:14px;text-align:right;padding-top:3px}
+.big{font:500 clamp(64px,12vw,112px)/1 "Geist Mono",ui-monospace,monospace;color:var(--ac);margin:0 0 8px;letter-spacing:-.04em}
+.bl{margin:0 0 18px}.bl b{display:block;font-weight:600;margin-bottom:2px}.bl span{color:var(--mut)}
+.rv{border-top:1px solid var(--ln);padding:12px 0;font-size:14px}.rv b{display:block;font-weight:600}.rv span{color:var(--mut);white-space:pre-wrap}
+.rw2{display:flex;gap:8px;flex-wrap:wrap}
+.st{position:fixed;bottom:calc(84px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--fg);color:#fff;padding:9px 16px;border-radius:var(--r);font-size:14px;z-index:40}
+.pn{max-height:calc(100dvh - 80px);overflow-y:auto;position:fixed;top:62px;right:16px;width:360px;max-width:calc(100% - 32px);display:none;flex-direction:column;gap:8px;background:#fff;border:1px solid var(--ln);border-radius:var(--r);padding:16px;box-shadow:0 12px 40px rgba(11,13,18,.12);z-index:10}.pn.open{display:flex}
+.pn h3{margin:0;font-size:15px}.pn .cl{overflow-y:auto;max-height:220px}.pn textarea{min-height:72px}
+.cm{border-left:2px solid var(--ln);padding-left:10px;margin:0 0 10px;font-size:14px}.cm.ds{border-color:var(--ac)}.cm small{color:var(--mut);margin-left:8px}.cm p{margin:2px 0 0;white-space:pre-wrap}
+.ov{position:fixed;inset:0;background:rgba(11,13,18,.45);display:none;align-items:center;justify-content:center;padding:16px;z-index:30}.ov.open{display:flex}
+.md{background:#fff;border-radius:var(--r);padding:24px;max-width:460px;width:100%}.md h3{margin:0 0 6px;font-size:20px}.md p{color:var(--mut);margin:0 0 14px}.md .rw{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+@media(max-width:700px){#hd{display:none}main{padding:28px 18px}.top{padding:12px 16px}.row.ph{grid-template-columns:36px 1fr}.row .d{grid-column:2;text-align:left;padding:0;font-size:13px}.act{padding:10px 16px}.btn.s{padding:8px 10px}}
+#zv{overflow:auto;align-items:flex-start;justify-content:flex-start;padding:0;background:rgba(11,13,18,.8)}#zv img{width:1100px;max-width:none;display:block;margin:auto}.zh{font-size:13px;color:var(--mut);margin:8px 0 0}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}</style></head><body>
+<header class="top"><img class="lg" src="logo.png" alt="KreaitX"><nav id="hd"></nav><div class="hb"><button class="btn s" id="cb" onclick="$('pn').classList.toggle('open')">Comments</button><button class="btn s" onclick="saveNow()">Save progress</button></div></header>
+<div class="bar"><i id="pb"></i></div>
+<main id="main"><div class="w" id="app"></div></main>
+<footer class="act" id="act" style="display:none"></footer>
+<div class="pn" id="pn"><h3 id="cs"></h3><div class="cl" id="cl"></div><input id="cn" type="text" placeholder="Your name" aria-label="Your name"><textarea id="ct" placeholder="Leave a comment on this page" aria-label="Comment"></textarea><div><button class="btn p s" onclick="sendC()">Send comment</button> <button class="lnk" onclick="$('pn').classList.remove('open')">Close</button></div></div>
+<div class="ov" id="zv" onclick="this.classList.remove('open')"><img alt="Screenshot, enlarged"></div>
+<div class="ov" id="ov"><div class="md" id="md"></div></div>
+<script>
+var IM=["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg"];
+var AUD=[
+["First impression","Homepage hero",0,[
+[3.6,4.5,"Branding","Logo is too small to read | The icon works, but the “ToltHawk” wordmark under it is unreadable at nav size."],
+[20,26.5,"UI","Type looks hollow and glitchy | Buttons and labels use an outlined display face. Check in a real browser: this may be a font or text-stroke bug."],
+[50,96,"UX","Six rotating messages | The hero changes topic every few seconds, so the first impression depends on timing, not on one promise."]]],
+["Mission and proof numbers","Homepage, mission and stats",1,[
+[50,24,"UI","Long paragraph in outlined type | The mission is the most important copy on the page and the hardest to read."],
+[50,56,"Branding","Specs and credentials share one row | “90+ agencies” is proof. “15 min updates” and “10 yr retention” are specs. Mixed together, neither lands."],
+[50,78,"UI","Same pill label on every section | The repeated eyebrow pill reads as a template, not a system."]]],
+["How it works","Homepage, process cards",2,[
+[21,34,"UX","No product anywhere | Four numbered cards explain install, transmit, monitor and alert. The sensor and the dashboard never appear."],
+[50,46,"UI","Small grey text on dark navy | Body copy is thin, condensed and low contrast. Likely to fail accessibility contrast checks."],
+[22,89,"UI","Alignment flips | This heading is left-aligned; the one above is centered. No consistent layout logic."]]],
+["Solutions","Homepage, solutions",3,[
+[22,50,"UX","Uneven copy | “Floods move fast.” sits beside two-line descriptions. Six items, three writing styles."],
+[60,48,"Branding","Generic stock imagery | The flood photo has a different look from the hero and the case studies. No ToltHawk visual language."],
+[52,63,"UX","Same line repeated | The side panel repeats “Floods move fast.” instead of adding information."]]],
+["Trust and proof","Homepage, clients and testimonials",4,[
+[50,17,"Branding","Client names as text pills | Government names are ToltHawk’s strongest proof, shown without logos. NOAA is clipped at the edge."],
+[76,83,"UI","Third testimonial breaks the pattern | The name sits lower, there is no customer-since line, and “BTTB” is not explained."],
+[50,52,"UX","“Real results” without results | The quotes are good, but no numbers, photos or logos back them up."]]],
+["Call to action and footer","Homepage, end",5,[
+[50,33,"UX","Promise does not match the button | The text offers “a personalized demo”; the button says “Request a Quotation”."],
+[14,67,"Branding","Different logo in the footer | The nav uses icon plus wordmark. The footer uses a plain wordmark with no icon."],
+[13,96,"UI","Footer details | “2026 ToltHawk” has no © symbol, the address is not linked, and Products and Texas are missing from the links."]]],
+["Case studies","Case studies page",6,[
+[30,54,"UI","Image does not fill the card | Each photo is cropped and leaves a flat blue band underneath. It looks like a layout bug."],
+[75,82,"UI","Uneven cards | The two cards end at slightly different heights."],
+[50,69,"Positive","Strong content | Satellite alerts where there is no cellular coverage is the best differentiator on the site, and it is buried here."]]]];
+var SUM=[["One promise","The site covers floods, rivers, snow, roads, tanks and stormwater. It never says the one thing ToltHawk is known for."],["Product is invisible","In the sections I reviewed, the sensor and the dashboard never appear. Buyers see stock photos, not the product."],["One market only","All language is US-only. FlowSense, Pakistan and Urdu appear nowhere, so Pakistani buyers have no way in."],["Proof is underused","Government clients, case studies and the satellite differentiator are the strongest assets, and they are shown weakly."]];
+var PH=[["Discovery","1 week","This questionnaire, a stakeholder call, and a review of the current brand and website.","A discovery brief that summarises what we learned.","Your answers and one call with the decision-maker."],
+["Strategy","1 to 2 weeks","Positioning, audience per market, and how ToltHawk and FlowSense relate.","A one-page brand strategy and a brand architecture map.","Sign-off on positioning and the FlowSense relationship."],
+["Identity","2 to 3 weeks","Logo, wordmark, color and typography, shown as two or three directions.","Logo suite, color palette and type system.","Pick one direction and give consolidated feedback."],
+["Visual system","2 weeks","Guidelines, templates, iconography and product and hardware branding, with bilingual (Urdu) lockups if needed.","Brand guidelines and core templates.","Review of real applications such as a proposal, a sensor label and a slide."],
+["Website and UX","3 to 4 weeks","Content hierarchy, wireframes and UI design, built around the audit findings.","Wireframes, UI design and handoff files.","Content, product photos, and sign-off on wireframes then design."],
+["Launch and handover","1 week","Final files, rollout plan and a short handover session.","Full asset package and launch checklist.","Final sign-off."]];
+var CHARS=["Reliable","Precise","Intelligent","Scientific","Innovative","Authoritative","Secure","Rugged","Professional","Human","Environmental","Premium","Accessible"];
+var US="United States",PK="Pakistan",PM=[US,PK];
+var Q=[
+["Direction","Where should ToltHawk be in 5 years?","In 2 to 3 sentences. e.g. “The default early-warning platform for flood-prone regions in North America and South Asia.”",[""]],
+["Direction","Which sectors matter most for growth?","Tap up to 3, in priority order. Your first tap is #1.",[],["Government / public sector","Municipalities","Water & irrigation","Utilities","Disaster management","Infrastructure","Environmental monitoring","Industrial","Research / universities"],3],
+["Positioning","What problem does ToltHawk solve better than anyone else?","e.g. “Utilities find out about an overflow after it happens, not before.”",[""]],
+["Positioning","Why should a buyer choose ToltHawk?","Be specific about what is different. Then name the competitors you are compared with most.",["Why ToltHawk","Main competitors"]],
+["Audience","Who evaluates ToltHawk, and who signs the contract?","Answer for each market. e.g. “Evaluator: city water engineer. Signer: public works director.”",PM.map(function(m){return m+": evaluator and decision-maker"})],
+["Audience","What makes these buyers trust a company like ToltHawk?","Pick up to 4. Add detail below if it differs by market.",[""],["Certifications","Case studies","Government references","Donor / institutional backing","Local presence","Pilot projects","Published accuracy data","Partnerships"],4],
+["Two markets","How big is each market for you, and how do buyers buy?","Give the share of business now and in 5 years, and the buying process. e.g. “Today 20% of revenue. Public tenders and donor-funded projects.”",PM.map(function(m){return m})],
+["Two markets","Is Urdu or bilingual material needed?","This affects logo lockups, proposals, signage and field equipment.",[""],["Yes, bilingual everywhere","Only for Pakistan documents and signage","Maybe later","No"],1],
+["Two markets","How should ToltHawk feel in terms of origin?","Add any concern below. e.g. “Might sound foreign in Pakistan.”",[""],["American","Global","Locally rooted in Pakistan","Different per market"],1],
+["Brand architecture","What is the relationship between ToltHawk and FlowSense Global?","State it as you would officially. e.g. “FlowSense is ToltHawk’s exclusive Pakistan representative.”",["Official relationship","Products or sub-brands that need their own name"]],
+["Brand architecture","Which name should customers remember in each market?","e.g. “ToltHawk in both,” or “FlowSense in Pakistan.”",PM.map(function(m){return m})],
+["Perception","How is ToltHawk seen today, and how should it be seen?","Be honest about today.",["Today, ToltHawk is perceived as","We want it to be perceived as","It must never be perceived as"]],
+["Perception","Pick the five attributes that should define ToltHawk.","Choose exactly five.",[""],CHARS,5],
+["Perception","Should the brand lead with the technology or the outcome?","Technology means sensors and data. Outcome means safer communities and earlier decisions. Note any difference by market below.",[""],["Technology","Outcomes","Balanced","Differs by market"],1],
+["Existing identity","What should stay, and what is not working?","e.g. Stay: the hawk symbol and the name. Not working: “The logo is unreadable at small sizes on sensor housings.”",["Must stay (including anything non-negotiable)","Causing problems today"]],
+["Existing identity","How much freedom do I have with the current identity?","",[""],["Refine it","Significant evolution","Complete redesign","Open to recommendation"],1],
+["References","Which brands do you admire, and which do you not want to resemble?","They do not need to be competitors. e.g. admire: Xylem, Siemens, Stripe.",["Brands to match (3)","Brands to avoid (2 to 3)"]],
+["Applications","Where will the identity matter most?","Pick up to 5, in priority order.",[],["Website","Product hardware","Dashboard / software","Mobile app","Government proposals","Technical documentation","Presentations","Social media","Trade shows","Field signage","Vehicles","Reports"],5],
+["Success","What would make you say, “This finally represents ToltHawk correctly”?","e.g. “A buyer in either country sees it and trusts us before reading anything.”",[""]],
+["Success","Anything else the designer should know?","Include upcoming launches, markets, partnerships or plans that are not in the company material. Write “no” if nothing.",[""]]
+];
+
+var SEQ=[{k:"in"}];AUD.forEach(function(a){SEQ.push({k:"a",a:a})});SEQ.push({k:"sum"},{k:"qi"});
+var N=Q.length;Q.forEach(function(q,n){SEQ.push({k:"q",n:n})});SEQ.push({k:"ov"});PH.forEach(function(p,n){SEQ.push({k:"p",p:p,n:n})});SEQ.push({k:"end"});
+var SEC=["Audit","Questions","How we work","Submit"],sc={"in":0,a:0,sum:0,qi:1,q:1,ov:2,p:2,end:3};
+var KEY="th_bd2",i=0,S={id:"",who:"",a:[],pos:0},cm=[],app=document.getElementById("app");
+function $(x){return document.getElementById(x)}
+try{var sv=localStorage.getItem(KEY);if(sv)S=JSON.parse(sv)}catch(e){}
+if(!S.id)S.id="r"+Math.random().toString(36).slice(2,10)+Math.random().toString(36).slice(2,10);
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+function save(){persist();sync()}
+function ans(k){return S.a[k]||(S.a[k]={s:[],t:[]})}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function cur(){return SEQ[i]}
+function grab(){var w=$("who");if(w)S.who=w.value;if(cur().k=="q")app.querySelectorAll("textarea").forEach(function(t){ans(cur().n).t[+t.dataset.k]=t.value});persist()}
+function go(n){grab();i=Math.max(0,Math.min(SEQ.length-1,n));S.pos=i;persist();render();loadC();$("main").scrollTop=0;sync()}
+function jump(s){for(var k=0;k<SEQ.length;k++)if(sc[SEQ[k].k]==s){go(k);return}}
+function post(b){return fetch("/api/data",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(b)}).then(function(r){return r.json()})}
+function ansText(x){var q=Q[x],a=ans(x),b=[];if(a.s.length)b.push(a.s.join(", "));q[3].forEach(function(l,m){if(a.t[m]&&a.t[m].trim())b.push((l&&!q[4]?l+": ":"")+a.t[m].trim())});return b.join("\n")}
+function pack(){return Q.map(function(q,x){return{n:x+1,q:q[1],a:ansText(x)}})}
+function payload(sub){return{type:"answers",id:S.id,who:S.who,pos:S.pos,state:S.a,submit:sub?1:0,answers:pack()}}
+var tm;function sync(){clearTimeout(tm);tm=setTimeout(function(){if(!S.who&&!S.pos&&!pack().some(function(x){return x.a}))return;post(payload()).catch(function(){})},1500)}
+app.addEventListener("input",function(){grab();sync()});
+var BK='<button class="btn" onclick="go(i-1)">Back</button><span class="sp"></span>';
+function NX(l){return '<button class="btn p" onclick="go(i+1)">'+(l||"Next")+'</button>'}
+function row(n,t,d,x){return '<div class="row'+(x?" ph":"")+'"><span class="n">'+n+'</span><div><b>'+t+'</b><p>'+d+'</p></div>'+(x?'<span class="d">'+x+'</span>':"")+'</div>'}
+function show(h,wide,act){app.className="w"+(wide?" wide":"");app.innerHTML=h;var a=$("act");a.className="act"+(wide?" wide":"");a.innerHTML=act?'<div class="in">'+act+'</div>':"";a.style.display=act?"":"none";var f=app.querySelector("textarea");if(f&&innerWidth>700)f.focus({preventScroll:true})}
+function zoom(s){$("zv").querySelector("img").src=s;$("zv").classList.add("open")}
+function sid(){var s=cur();return s.k=="a"?"audit-"+i:s.k=="q"?"q"+(s.n+1):s.k=="p"?"phase-"+(s.n+1):s.k}
+function slabel(){var s=cur();return s.k=="a"?"Audit: "+s.a[0]:s.k=="q"?"Q"+(s.n+1)+": "+Q[s.n][1]:s.k=="p"?"Phase: "+s.p[0]:({"in":"Welcome",sum:"Audit summary",qi:"Questions intro",ov:"Phases overview",end:"Review"})[s.k]}
+function render(){
+var s=cur(),k=s.k,h;$("pb").style.width=(i/(SEQ.length-1)*100)+"%";
+$("hd").innerHTML=SEC.map(function(n,x){return '<button class="'+(sc[k]==x?"on":"")+'" onclick="jump('+x+')">'+n+'</button>'}).join("");
+if(k=="in"){show('<h1>Brand discovery for ToltHawk</h1><p class="lead">Where the brand stands today, the questions only you can answer, and how we will work together. About 15 minutes.</p><div class="rows">'+row("01","Audit","What we found on your website, with screenshots.")+row("02","Questions",N+" questions, each with an example.")+row("03","How we work","Phases, timing and what we need from you.")+'</div><label for="who">Your name and role (optional)</label><input type="text" id="who" value="'+esc(S.who||"")+'" placeholder="e.g. Amina, Head of Operations"><p class="hint">Your answers save as you go. Use Save progress at the top to get a link and continue later.</p>',0,'<span class="sp"></span>'+NX("Start"));return}
+if(k=="a"){var a=s.a;h='<p class="meta">Audit · '+a[1]+' · '+i+' of '+AUD.length+'</p><h2>'+a[0]+'</h2><p class="zh">Tap the screenshot to enlarge it.</p><div class="aud" style="margin-top:20px"><div class="fig"><img src="'+IM[a[2]]+'" alt="Screenshot: '+esc(a[1])+'">';
+h=h.replace('<img ','<img onclick="zoom(this.src)" ');a[3].forEach(function(p,x){h+='<span class="dot" style="left:'+p[0]+'%;top:'+p[1]+'%">'+(x+1)+'</span>'});h+='</div><div>';
+a[3].forEach(function(p,x){var t=p[3].split(" | ");h+='<div class="fd"><span class="dot">'+(x+1)+'</span><div><b>'+t[0]+'<span class="tg '+p[2]+'">'+p[2]+'</span></b><p>'+t[1]+'</p></div></div>'});
+show(h+'</div></div>',1,BK+NX());return}
+if(k=="sum"){h='<p class="meta">Audit · The bigger picture</p><h2>What matters more than the visuals</h2><p class="lead">The site is clean and modern, so the problems are mostly strategic. This review covers screenshots of the homepage and case studies page only.</p><div class="rows">';SUM.forEach(function(p,x){h+=row("0"+(x+1),p[0],p[1])});show(h+'</div>',0,BK+NX("On to the questions"));return}
+if(k=="qi"){show('<p class="meta">Part 2</p><h2>'+N+' questions only you can answer</h2><p class="lead">Short answers are fine. Each question has an example, and many ask for the US and Pakistan separately. You can skip any question and come back to it.</p><p class="hint">Use Save progress at the top any time to get a link that restores your answers and your place.</p>',0,BK+NX("Begin"));return}
+if(k=="q"){var n=s.n,q=Q[n],a=ans(n);h='<p class="meta">'+(n+1)+' / '+N+' · '+q[0]+'</p><h2>'+q[1]+'</h2>';
+if(q[2])h+='<p class="ex">'+q[2]+'</p>';
+if(q[4]){h+='<div class="opts">';q[4].forEach(function(o,x){var p=a.s.indexOf(o);h+='<button class="opt'+(p>-1?" on":"")+'" onclick="pick('+x+')"><b>'+(q[5]>1&&p>-1?p+1:"✓")+'</b>'+o+'</button>'});h+='</div>';if(q[5]>1)h+='<p class="hint">'+a.s.length+' of '+q[5]+' selected</p>'}
+q[3].forEach(function(l,x){if(q[4])l="Add detail (optional)";h+=(l?'<label for="f'+x+'">'+l+'</label>':"")+'<textarea id="f'+x+'" data-k="'+x+'" placeholder="Type your answer">'+esc(a.t[x]||"")+'</textarea>'});
+show(h,0,BK+'<button class="lnk" onclick="go(i+1)">Skip</button>'+NX());return}
+if(k=="ov"){h='<p class="meta">Part 3</p><h2>Six phases, one decision at each</h2><p class="lead">You approve every phase before the next one starts. This is a draft timeline of about 10 to 12 weeks, adjusted once scope is agreed.</p><div class="rows">';PH.forEach(function(p,x){h+=row("0"+(x+1),p[0],p[2],p[1])});show(h+'</div>',0,BK+NX("Phase by phase"));return}
+if(k=="p"){var p=s.p;show('<p class="meta">How we work · '+p[1]+'</p><div class="big">0'+(s.n+1)+'</div><h2>'+p[0]+'</h2><p class="lead">'+p[2]+'</p><div class="bl"><b>You get</b><span>'+p[3]+'</span></div><div class="bl"><b>We need from you</b><span>'+p[4]+'</span></div>',0,BK+NX(s.n==PH.length-1?"Review and submit":"Next"));return}
+h='<p class="meta">Last step</p><h2>Review and submit</h2><p class="lead">Submit your answers to KreaitX. You can edit and submit again, and keep a copy.</p><div class="rw2"><button class="btn p" onclick="submitAll()">Submit answers</button> <button class="btn" onclick="dl()">Download a copy</button> <button class="btn" onclick="jump(1)">Edit answers</button></div><div style="margin-top:24px">';
+Q.forEach(function(q,x){h+='<div class="rv"><b>'+(x+1)+'. '+q[1]+'</b><span>'+esc(ansText(x)||"Skipped")+'</span></div>'});show(h+'</div>',0,'<button class="btn" onclick="go(i-1)">Back</button>')}
+function pick(x){grab();var n=cur().n,q=Q[n],a=ans(n),o=q[4][x],p=a.s.indexOf(o);if(p>-1)a.s.splice(p,1);else{if(q[5]==1)a.s=[];if(a.s.length>=q[5])a.s.shift();a.s.push(o)}save();render()}
+function txt(){var o="ToltHawk Brand Discovery\n"+(S.who?"From: "+S.who+"\n":"")+"\n";Q.forEach(function(q,x){o+=(x+1)+". "+q[1]+"\n"+(ansText(x)||"(skipped)")+"\n\n"});return o}
+function toast(m){var t=document.createElement("div");t.className="st";t.textContent=m;document.body.appendChild(t);setTimeout(function(){t.remove()},2400)}
+function submitAll(){grab();post(payload(1)).then(function(j){if(j.error)throw 0;toast("Submitted. Thank you.")}).catch(function(){toast("Could not submit. Download a copy and email it.")})}
+async function dl(){try{var d=await claude.use("downloads");if(d){await d.save({filename:"tolthawk-brand-discovery.txt",data:new Blob([txt()],{type:"text/plain"})});return}}catch(e){}var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([txt()],{type:"text/plain"}));a.download="tolthawk-brand-discovery.txt";a.click()}
+function saveNow(){grab();var m=$("md");$("ov").classList.add("open");m.innerHTML="<h3>Saving</h3>";
+post(payload()).then(function(j){if(j.error)throw 0;var u=location.origin+location.pathname+"?r="+S.id;m.innerHTML='<h3>Progress saved</h3><p>Use this link to continue on any device. Your answers and your place are restored.</p><input type="text" readonly id="ul" aria-label="Resume link" value="'+u+'" onfocus="this.select()"><div class="rw"><button class="btn p s" onclick="cpy()">Copy link</button><a class="btn s" href="mailto:?subject='+encodeURIComponent("ToltHawk brand discovery: my link")+"&body="+encodeURIComponent(u)+'">Email it to me</a><button class="btn s" onclick="closeM()">Close</button></div>'}).catch(function(){m.innerHTML='<h3>Saved in this browser</h3><p>The server could not be reached, so your progress is stored on this device only. Open this page again in this browser to continue.</p><div class="rw"><button class="btn s" onclick="closeM()">Close</button></div>'})}
+function closeM(){$("ov").classList.remove("open")}
+function cpy(){var e=$("ul");if(navigator.clipboard)navigator.clipboard.writeText(e.value).then(function(){toast("Link copied")},function(){e.select()});else e.select()}
+$("ov").addEventListener("click",function(e){if(e.target==$("ov"))closeM()});
+function loadC(){fetch("/api/data?screen="+encodeURIComponent(sid())).then(function(r){return r.json()}).then(function(j){cm=j.comments||[];drawC()}).catch(function(){cm=[];drawC()})}
+function drawC(){$("cb").textContent="Comments"+(cm.length?" ("+cm.length+")":"");$("cl").innerHTML=cm.length?cm.map(function(c){return '<div class="cm'+(c.role=="designer"?" ds":"")+'"><b>'+esc(c.role=="designer"?"KreaitX":(c.who||"Client"))+'</b><small>'+new Date(c.ts).toLocaleString()+'</small><p>'+esc(c.text)+'</p></div>'}).join(""):'<p class="hint">No comments on this page yet.</p>';$("cs").textContent="Comments on this page";var n=$("cn");if(!n.value)n.value=S.who||""}
+function sendC(){var t=$("ct").value.trim(),n=$("cn").value.trim();if(!t)return;if(n){S.who=n;persist()}post({type:"comment",id:S.id,who:S.who,screen:sid(),label:slabel(),text:t}).then(function(j){if(j.error)throw 0;$("ct").value="";loadC()}).catch(function(){toast("Could not send. Try again.")})}
+document.addEventListener("keydown",function(e){if(e.key=="Escape"){closeM();$("pn").classList.remove("open")}if(e.key=="Enter"&&(e.ctrlKey||e.metaKey)&&cur().k=="q")go(i+1)});
+function start(){i=Math.max(0,Math.min(SEQ.length-1,S.pos||0));render();loadC();if(i>0)toast("Welcome back. Continuing where you left off.")}
+var rp=new URLSearchParams(location.search).get("r");
+if(rp&&rp!=S.id){fetch("/api/data?resume="+encodeURIComponent(rp)).then(function(r){return r.json()}).then(function(j){if(j&&j.state){S={id:rp,who:j.who||"",a:j.state,pos:j.pos||0};persist()}start()}).catch(start)}else start();
+</script></body></html>

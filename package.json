@@ -1,0 +1,5 @@
+{
+  "name": "tolthawk-brand-discovery",
+  "private": true,
+  "engines": { "node": ">=18" }
+}
