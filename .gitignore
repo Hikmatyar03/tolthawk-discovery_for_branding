@@ -1,6 +1,5 @@
-node_modules/
-.env
-.env*.local
+node_modules
 .vercel
+.env*
 .DS_Store
 Thumbs.db
